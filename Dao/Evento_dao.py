@@ -1,14 +1,17 @@
 from Model.Evento import Evento
-class EventoDao()
+class EventoDao():
     def __init__(self):
         self.model = Evento
 
-    def list_all()
+    def list_all(self):
         lista = []
-        arquivo = open(r"C:\Users\900152\Documents\EventosApi\Tabela", "r")
+        arquivo = open(r'C:\Users\900160\Documents\EventosApi\Tabela','r')
         for i in arquivo:
             lista.append(i)
-        return lista
+        return print(lista)
 
 a = EventoDao()
-print(a.list_all())
+a.list_all()
+
+
+
